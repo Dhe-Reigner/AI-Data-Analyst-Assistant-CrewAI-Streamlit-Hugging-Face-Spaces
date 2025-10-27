@@ -2,27 +2,37 @@
 [
   {
     "type": "bar",
-    "x": "fee",
-    "y": "Name",
-    "description": "Top Transfers by Fee. A horizontal bar chart to rank players by their transfer fee, effectively highlighting the most expensive transfers like Alexander Isak's. This visualizes the high-value nature of the market."
+    "x": "gender",
+    "y": "has_covid"
+  },
+  {
+    "type": "bar",
+    "x": "city",
+    "y": "has_covid"
   },
   {
     "type": "scatter",
-    "x": "marketValue",
-    "y": "fee",
-    "description": "Transfer Fee vs. Market Value. A scatter plot to explore the relationship between a player's market value and the actual fee paid. This chart can reveal the positive correlation and identify outliers, such as players bought at a significant premium or discount."
+    "x": "age",
+    "y": "fever"
   },
   {
-    "type": "bar",
-    "x": "Position Label",
-    "y": "PlayerId",
-    "description": "Number of Transfers by Position. A bar chart showing the frequency of transfers for each player position. This will clearly illustrate the dominance of Strikers (ST) in the transfer market, as mentioned in the analysis. The y-axis represents a count of players."
+    "type": "boxplot",
+    "x": "city",
+    "y": "fever"
   },
   {
-    "type": "bar",
-    "x": "to Club",
-    "y": "fee",
-    "description": "Total Spending by Buying Club. A bar chart aggregating the total transfer fees spent by each 'to Club'. This visualizes which clubs were the biggest spenders during the transfer window. The y-axis represents a sum of fees."
+    "type": "pie",
+    "x": "gender",
+    "y": "has_covid"
   }
 ]
 ```
+This JSON list of chart specs includes the following visualizations:
+
+1.  A bar chart to show the distribution of COVID-19 cases by gender.
+2.  A bar chart to show the distribution of COVID-19 cases by city.
+3.  A scatter plot to visualize the relationship between age and fever levels.
+4.  A boxplot to compare the fever levels across different cities.
+5.  A pie chart to show the proportion of COVID-19 cases by gender.
+
+Each chart is designed to highlight a key insight from the dataset, and the choice of chart type is based on the type of data and the nature of the relationship being explored.

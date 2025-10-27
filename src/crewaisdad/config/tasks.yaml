@@ -7,8 +7,8 @@ analysis_task:
 
 visual_task:
   description: >
-    -Based on this dataset, suggest 2-4 charts to visualize key insights
-    -Specif chart types(bar,line,scatter,boxplot,pie) and columns for x/y axes in JSON format
+    -Based on this dataset, suggest 2-4 charts and the code to draw each  to visualize key insights
+    -Specific chart types(bar,line,scatter,boxplot,pie) and columns for x/y axes in JSON format
     -Example:
        [{{'type':'bar','x':'Category','y':'Sales'}},
        {{'type':'line','x':'Date','y':'Profit'}}]\n{sample_data}

@@ -14,6 +14,7 @@ load_dotenv()
 
 #os.getenv('HUGGINGFACE_API_KEY')
 #os.environ['GEMINI_API_KEY']
+os.getenv('JINA_API_KEY')
 
 def main():
     #Set page
