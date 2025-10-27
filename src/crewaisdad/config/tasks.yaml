@@ -1,0 +1,24 @@
+analysis_task:
+  description: >
+    Analyze this dataset {sample_data} and summarize its descriptive aanlytics:\n{sample_data}
+  expected_output: >
+    Provide key metrics,correlations and trends in Markdown format
+  agent: data_analyst
+
+visual_task:
+  description: >
+    -Based on this dataset, suggest 2-4 charts to visualize key insights
+    -Specif chart types(bar,line,scatter,boxplot,pie) and columns for x/y axes in JSON format
+    -Example:
+       [{{'type':'bar','x':'Category','y':'Sales'}},
+       {{'type':'line','x':'Date','y':'Profit'}}]\n{sample_data}
+  expected_output: >
+    JSON list of chart specs:[{'type':'bar','x':'col1','y':'col2'}, ...]
+  agent: visualization_expert
+
+business_task:
+  description: >
+    Write a short business report summarizing key findings fro this dataset:\n{sample_data}
+  expected_output: >
+    A professional Markdown report with business insights and recommendations
+  agent: business_advisor

@@ -1,0 +1,9 @@
+streamlit
+crewai
+langchain 
+openai 
+pandas 
+altair 
+plotly 
+matplotlib 
+seaborn
